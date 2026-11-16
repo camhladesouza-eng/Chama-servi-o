@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
 
   <title>Chama Serviço | Pirapora e Buritizeiro</title>
 
-  <meta name="description" content="Encontre profissionais para corte de grama, poda de árvores, limpeza de lotes e serviços residenciais em Pirapora e Buritizeiro MG.">
+  <meta name="description" content="Encontre profissionais para corte de grama, poda de árvores, limpeza de lotes, jardinagem e pequenos reparos em Pirapora e Buritizeiro MG.">
 
   <link rel="stylesheet" href="style.css">
 
@@ -19,12 +20,18 @@
 
 <body>
 
+<!-- CABEÇALHO -->
+
 <header class="header">
+
   <div class="container nav">
 
-    <a href="#" class="logo">
-      <span class="logo-icon">✳</span>
-      <span>CHAMA<span class="logo-green">SERVIÇO</span></span>
+    <a href="#inicio" class="logo">
+      <img
+        src="assets/logo-chama-servico.png"
+        alt="Chama Serviço"
+        style="height:55px;width:auto;max-width:210px;object-fit:contain;"
+      >
     </a>
 
     <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
@@ -40,12 +47,13 @@
     </nav>
 
   </div>
+
 </header>
 
 
 <main>
 
-<!-- HERO -->
+<!-- APRESENTAÇÃO PRINCIPAL -->
 
 <section class="hero" id="inicio">
 
@@ -70,6 +78,7 @@
       </p>
 
       <div class="hero-actions">
+
         <a href="#orcamento" class="btn btn-primary">
           Encontrar profissional →
         </a>
@@ -77,6 +86,7 @@
         <a href="#servicos" class="btn btn-outline">
           Ver serviços
         </a>
+
       </div>
 
       <div class="hero-location">
@@ -86,19 +96,26 @@
 
     </div>
 
+
     <div class="hero-image">
+
       <img
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000"
-        alt="Profissional realizando manutenção de jardim"
+        src="assets/corte-de-grama.jpg"
+        alt="Profissional realizando corte de grama"
+        fetchpriority="high"
       >
 
       <div class="floating-card">
+
         <span class="floating-icon">🌱</span>
+
         <div>
           <strong>Seu serviço resolvido!</strong>
           <small>Encontre quem pode ajudar.</small>
         </div>
+
       </div>
+
     </div>
 
   </div>
@@ -106,73 +123,196 @@
 </section>
 
 
-<!-- SERVIÇOS -->
+<!-- CATEGORIAS DE SERVIÇOS -->
 
 <section class="section" id="servicos">
 
   <div class="container">
 
     <div class="section-heading">
+
       <span class="eyebrow">NOSSAS CATEGORIAS</span>
+
       <h2>O que você precisa fazer?</h2>
-      <p>Escolha o serviço e solicite seu orçamento.</p>
+
+      <p>
+        Escolha o serviço e solicite seu orçamento.
+      </p>
+
     </div>
+
 
     <div class="services-grid">
 
+
+      <!-- CORTE DE GRAMA -->
+
       <article class="service-card">
-        <div class="service-icon">🌿</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;overflow:hidden;border-radius:12px;">
+
+          <img
+            src="assets/corte-de-grama.jpg"
+            alt="Serviço de corte de grama"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+
+        </div>
+
         <h3>Corte de grama</h3>
-        <p>Manutenção de jardins, quintais e terrenos.</p>
+
+        <p>
+          Manutenção de jardins, quintais e terrenos.
+        </p>
+
         <button onclick="selecionarServico('Corte de grama')">
           Solicitar orçamento →
         </button>
+
       </article>
 
+
+      <!-- PODA DE ÁRVORES -->
+
       <article class="service-card">
-        <div class="service-icon">🌳</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;display:flex;align-items:center;justify-content:center;background:#eaf5ed;border-radius:12px;">
+
+          <span style="font-size:75px;">🌳</span>
+
+        </div>
+
         <h3>Poda de árvores</h3>
-        <p>Profissionais para poda e manutenção de árvores.</p>
+
+        <p>
+          Profissionais para poda e manutenção de árvores.
+        </p>
+
         <button onclick="selecionarServico('Poda de árvores')">
           Solicitar orçamento →
         </button>
+
       </article>
 
+
+      <!-- LIMPEZA DE LOTES -->
+
       <article class="service-card">
-        <div class="service-icon">🏡</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;overflow:hidden;border-radius:12px;">
+
+          <img
+            src="assets/limpeza-de-lotes.jpg"
+            alt="Serviço de limpeza de lotes"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+
+        </div>
+
         <h3>Limpeza de lotes</h3>
-        <p>Capina, roçagem e limpeza de terrenos.</p>
+
+        <p>
+          Capina, roçagem e limpeza de terrenos.
+        </p>
+
         <button onclick="selecionarServico('Limpeza de lotes')">
           Solicitar orçamento →
         </button>
+
       </article>
 
+
+      <!-- JARDINAGEM -->
+
       <article class="service-card">
-        <div class="service-icon">🌺</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;overflow:hidden;border-radius:12px;">
+
+          <img
+            src="assets/jardinagem.jpg"
+            alt="Serviço profissional de jardinagem"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+
+        </div>
+
         <h3>Jardinagem</h3>
-        <p>Cuidados, manutenção e organização de jardins.</p>
+
+        <p>
+          Cuidados, manutenção e organização de jardins.
+        </p>
+
         <button onclick="selecionarServico('Jardinagem')">
           Solicitar orçamento →
         </button>
+
       </article>
 
+
+      <!-- LIMPEZA EXTERNA -->
+
       <article class="service-card">
-        <div class="service-icon">🧹</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;overflow:hidden;border-radius:12px;">
+
+          <img
+            src="assets/limpeza-de-quintal.jpg"
+            alt="Serviço de limpeza de quintal"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+
+        </div>
+
         <h3>Limpeza externa</h3>
-        <p>Limpeza de quintais, áreas externas e calçadas.</p>
+
+        <p>
+          Limpeza de quintais, áreas externas e calçadas.
+        </p>
+
         <button onclick="selecionarServico('Limpeza externa')">
           Solicitar orçamento →
         </button>
+
       </article>
 
+
+      <!-- PEQUENOS REPAROS -->
+
       <article class="service-card">
-        <div class="service-icon">🔧</div>
+
+        <div class="service-photo"
+             style="width:100%;height:180px;overflow:hidden;border-radius:12px;">
+
+          <img
+            src="assets/pequenos-reparos.jpg"
+            alt="Serviços de pequenos reparos residenciais"
+            loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+
+        </div>
+
         <h3>Pequenos reparos</h3>
-        <p>Serviços de manutenção e conservação residencial.</p>
+
+        <p>
+          Serviços de manutenção e conservação residencial.
+        </p>
+
         <button onclick="selecionarServico('Pequenos reparos')">
           Solicitar orçamento →
         </button>
+
       </article>
+
 
     </div>
 
@@ -188,32 +328,62 @@
   <div class="container">
 
     <div class="section-heading">
+
       <span class="eyebrow">SIMPLES E PRÁTICO</span>
+
       <h2>Como funciona?</h2>
-      <p>Três passos para encontrar o profissional ideal.</p>
+
+      <p>
+        Três passos para encontrar o profissional ideal.
+      </p>
+
     </div>
+
 
     <div class="steps-grid">
 
       <div class="step">
+
         <span>01</span>
+
         <div class="step-icon">🔎</div>
+
         <h3>Escolha o serviço</h3>
-        <p>Encontre a categoria que corresponde à sua necessidade.</p>
+
+        <p>
+          Encontre a categoria que corresponde à sua necessidade.
+        </p>
+
       </div>
 
+
       <div class="step">
+
         <span>02</span>
+
         <div class="step-icon">📝</div>
+
         <h3>Solicite seu orçamento</h3>
-        <p>Informe seus dados e explique o que precisa.</p>
+
+        <p>
+          Informe seus dados e explique o que precisa.
+        </p>
+
       </div>
 
+
       <div class="step">
+
         <span>03</span>
+
         <div class="step-icon">🤝</div>
+
         <h3>Converse com o profissional</h3>
-        <p>Receba atendimento e combine os detalhes do serviço.</p>
+
+        <p>
+          Receba atendimento e combine os detalhes do serviço.
+        </p>
+
       </div>
 
     </div>
@@ -223,7 +393,7 @@
 </section>
 
 
-<!-- ORÇAMENTO -->
+<!-- FORMULÁRIO DE ORÇAMENTO -->
 
 <section class="section" id="orcamento">
 
@@ -231,7 +401,9 @@
 
     <div class="budget-wrapper">
 
+
       <div class="budget-info">
+
         <span class="eyebrow">VAMOS RESOLVER?</span>
 
         <h2>Solicite seu orçamento!</h2>
@@ -252,12 +424,14 @@
         <div class="budget-benefit">
           <span>✓</span> Conexão com profissionais
         </div>
+
       </div>
 
 
       <form id="budgetForm" class="budget-form">
 
         <label for="nome">Seu nome</label>
+
         <input
           type="text"
           id="nome"
@@ -265,7 +439,9 @@
           required
         >
 
+
         <label for="telefone">Seu telefone</label>
+
         <input
           type="tel"
           id="telefone"
@@ -273,26 +449,45 @@
           required
         >
 
+
         <label for="cidade">Cidade</label>
+
         <select id="cidade" required>
+
           <option value="">Selecione sua cidade</option>
+
           <option value="Pirapora">Pirapora</option>
+
           <option value="Buritizeiro">Buritizeiro</option>
+
         </select>
+
 
         <label for="servico">Qual serviço precisa?</label>
+
         <select id="servico" required>
+
           <option value="">Selecione o serviço</option>
+
           <option>Corte de grama</option>
+
           <option>Poda de árvores</option>
+
           <option>Limpeza de lotes</option>
+
           <option>Jardinagem</option>
+
           <option>Limpeza externa</option>
+
           <option>Pequenos reparos</option>
+
           <option>Outro serviço</option>
+
         </select>
 
+
         <label for="descricao">Descreva o serviço</label>
+
         <textarea
           id="descricao"
           rows="4"
@@ -300,9 +495,11 @@
           required
         ></textarea>
 
+
         <button type="submit" class="btn btn-primary submit-btn">
           Enviar solicitação pelo WhatsApp →
         </button>
+
 
         <small class="form-note">
           Seus dados serão utilizados para atendimento da solicitação.
@@ -317,13 +514,14 @@
 </section>
 
 
-<!-- PROFISSIONAIS -->
+<!-- SEJA UM PROFISSIONAL -->
 
 <section class="professional-section" id="profissionais">
 
   <div class="container professional-content">
 
     <div>
+
       <span class="eyebrow">OPORTUNIDADE PARA VOCÊ</span>
 
       <h2>Você trabalha com serviços?</h2>
@@ -334,10 +532,16 @@
         e Buritizeiro.
       </p>
 
-      <a href="#" class="btn btn-light" onclick="cadastrarProfissional(event)">
+      <a
+        href="#"
+        class="btn btn-light"
+        onclick="cadastrarProfissional(event)"
+      >
         Quero ser profissional →
       </a>
+
     </div>
+
 
     <div class="professional-icon">
       👷
@@ -348,31 +552,53 @@
 </section>
 
 
-<!-- LOCALIZAÇÃO -->
+<!-- REGIÃO DE ATENDIMENTO -->
 
 <section class="section locations-section">
 
   <div class="container">
 
     <div class="section-heading">
+
       <span class="eyebrow">NOSSA REGIÃO</span>
+
       <h2>Atendemos perto de você!</h2>
-      <p>Conectando clientes e profissionais da região.</p>
+
+      <p>
+        Conectando clientes e profissionais da região.
+      </p>
+
     </div>
+
 
     <div class="locations-grid">
 
-      <div class="location-card">
-        <span>📍</span>
-        <h3>Pirapora - MG</h3>
-        <p>Atendimento em toda a cidade.</p>
-      </div>
 
       <div class="location-card">
+
         <span>📍</span>
-        <h3>Buritizeiro - MG</h3>
-        <p>Atendimento em toda a cidade.</p>
+
+        <h3>Pirapora - MG</h3>
+
+        <p>
+          Atendimento em toda a cidade.
+        </p>
+
       </div>
+
+
+      <div class="location-card">
+
+        <span>📍</span>
+
+        <h3>Buritizeiro - MG</h3>
+
+        <p>
+          Atendimento em toda a cidade.
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -383,37 +609,58 @@
 </main>
 
 
-<!-- FOOTER -->
+<!-- RODAPÉ -->
 
 <footer class="footer">
 
   <div class="container footer-content">
 
-    <a href="#" class="logo footer-logo">
-      <span class="logo-icon">✳</span>
-      <span>CHAMA<span class="logo-green">SERVIÇO</span></span>
+    <a href="#inicio" class="logo footer-logo">
+
+      <img
+        src="assets/logo-chama-servico.png"
+        alt="Chama Serviço"
+        style="height:55px;width:auto;max-width:210px;object-fit:contain;"
+      >
+
     </a>
+
 
     <p>
       Conectando pessoas e profissionais.
     </p>
 
+
     <p class="copyright">
-      ©️ <span id="year"></span> Chama Serviço. Todos os direitos reservados.
+      ©️ <span id="year"></span> Chama Serviço.
+      Todos os direitos reservados.
     </p>
 
-    <small>Pirapora e Buritizeiro - Minas Gerais</small>
+
+    <small>
+      Pirapora e Buritizeiro - Minas Gerais
+    </small>
 
   </div>
 
 </footer>
 
 
-<a href="#" class="whatsapp-float" id="whatsappFloat"
-   target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+<!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+
+<a
+  href="#"
+  class="whatsapp-float"
+  id="whatsappFloat"
+  target="_blank"
+  rel="noopener"
+  aria-label="Fale conosco pelo WhatsApp"
+>
   ☎
 </a>
 
+
+<!-- JAVASCRIPT -->
 
 <script src="script.js"></script>
 
