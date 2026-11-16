@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#082d52">
+
+  <title>Chama Serviço | Pirapora e Buritizeiro</title>
+
+  <meta name="description" content="Encontre profissionais para corte de grama, poda de árvores, limpeza de lotes e serviços residenciais em Pirapora e Buritizeiro MG.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="#" class="logo">
+      <span class="logo-icon">✳</span>
+      <span>CHAMA<span class="logo-green">SERVIÇO</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#profissionais">Seja profissional</a>
+      <a href="#orcamento" class="nav-button">Solicitar orçamento</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+  <div class="container hero-content">
+
+    <div class="hero-text">
+
+      <span class="eyebrow">
+        <span class="status-dot"></span>
+        PIRAPORA E BURITIZEIRO - MG
+      </span>
+
+      <h1>
+        Precisou de um serviço?
+        <span>É só chamar!</span>
+      </h1>
+
+      <p>
+        Encontre profissionais para cuidar da sua casa,
+        jardim e terreno. Praticidade para você e
+        oportunidades para quem trabalha.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#orcamento" class="btn btn-primary">
+          Encontrar profissional →
+        </a>
+
+        <a href="#servicos" class="btn btn-outline">
+          Ver serviços
+        </a>
+      </div>
+
+      <div class="hero-location">
+        <span>📍</span>
+        Atendimento em Pirapora e Buritizeiro.
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1000"
+        alt="Profissional realizando manutenção de jardim"
+      >
+
+      <div class="floating-card">
+        <span class="floating-icon">🌱</span>
+        <div>
+          <strong>Seu serviço resolvido!</strong>
+          <small>Encontre quem pode ajudar.</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVIÇOS -->
+
+<section class="section" id="servicos">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">NOSSAS CATEGORIAS</span>
+      <h2>O que você precisa fazer?</h2>
+      <p>Escolha o serviço e solicite seu orçamento.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon">🌿</div>
+        <h3>Corte de grama</h3>
+        <p>Manutenção de jardins, quintais e terrenos.</p>
+        <button onclick="selecionarServico('Corte de grama')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🌳</div>
+        <h3>Poda de árvores</h3>
+        <p>Profissionais para poda e manutenção de árvores.</p>
+        <button onclick="selecionarServico('Poda de árvores')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🏡</div>
+        <h3>Limpeza de lotes</h3>
+        <p>Capina, roçagem e limpeza de terrenos.</p>
+        <button onclick="selecionarServico('Limpeza de lotes')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🌺</div>
+        <h3>Jardinagem</h3>
+        <p>Cuidados, manutenção e organização de jardins.</p>
+        <button onclick="selecionarServico('Jardinagem')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Limpeza externa</h3>
+        <p>Limpeza de quintais, áreas externas e calçadas.</p>
+        <button onclick="selecionarServico('Limpeza externa')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Pequenos reparos</h3>
+        <p>Serviços de manutenção e conservação residencial.</p>
+        <button onclick="selecionarServico('Pequenos reparos')">
+          Solicitar orçamento →
+        </button>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- COMO FUNCIONA -->
+
+<section class="how-section" id="como-funciona">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">SIMPLES E PRÁTICO</span>
+      <h2>Como funciona?</h2>
+      <p>Três passos para encontrar o profissional ideal.</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <div class="step">
+        <span>01</span>
+        <div class="step-icon">🔎</div>
+        <h3>Escolha o serviço</h3>
+        <p>Encontre a categoria que corresponde à sua necessidade.</p>
+      </div>
+
+      <div class="step">
+        <span>02</span>
+        <div class="step-icon">📝</div>
+        <h3>Solicite seu orçamento</h3>
+        <p>Informe seus dados e explique o que precisa.</p>
+      </div>
+
+      <div class="step">
+        <span>03</span>
+        <div class="step-icon">🤝</div>
+        <h3>Converse com o profissional</h3>
+        <p>Receba atendimento e combine os detalhes do serviço.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ORÇAMENTO -->
+
+<section class="section" id="orcamento">
+
+  <div class="container">
+
+    <div class="budget-wrapper">
+
+      <div class="budget-info">
+        <span class="eyebrow">VAMOS RESOLVER?</span>
+
+        <h2>Solicite seu orçamento!</h2>
+
+        <p>
+          Preencha as informações e nossa equipe
+          receberá sua solicitação pelo WhatsApp.
+        </p>
+
+        <div class="budget-benefit">
+          <span>✓</span> Atendimento regional
+        </div>
+
+        <div class="budget-benefit">
+          <span>✓</span> Praticidade na contratação
+        </div>
+
+        <div class="budget-benefit">
+          <span>✓</span> Conexão com profissionais
+        </div>
+      </div>
+
+
+      <form id="budgetForm" class="budget-form">
+
+        <label for="nome">Seu nome</label>
+        <input
+          type="text"
+          id="nome"
+          placeholder="Digite seu nome"
+          required
+        >
+
+        <label for="telefone">Seu telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          placeholder="(38) 99999-9999"
+          required
+        >
+
+        <label for="cidade">Cidade</label>
+        <select id="cidade" required>
+          <option value="">Selecione sua cidade</option>
+          <option value="Pirapora">Pirapora</option>
+          <option value="Buritizeiro">Buritizeiro</option>
+        </select>
+
+        <label for="servico">Qual serviço precisa?</label>
+        <select id="servico" required>
+          <option value="">Selecione o serviço</option>
+          <option>Corte de grama</option>
+          <option>Poda de árvores</option>
+          <option>Limpeza de lotes</option>
+          <option>Jardinagem</option>
+          <option>Limpeza externa</option>
+          <option>Pequenos reparos</option>
+          <option>Outro serviço</option>
+        </select>
+
+        <label for="descricao">Descreva o serviço</label>
+        <textarea
+          id="descricao"
+          rows="4"
+          placeholder="Conte um pouco sobre o que precisa..."
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary submit-btn">
+          Enviar solicitação pelo WhatsApp →
+        </button>
+
+        <small class="form-note">
+          Seus dados serão utilizados para atendimento da solicitação.
+        </small>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROFISSIONAIS -->
+
+<section class="professional-section" id="profissionais">
+
+  <div class="container professional-content">
+
+    <div>
+      <span class="eyebrow">OPORTUNIDADE PARA VOCÊ</span>
+
+      <h2>Você trabalha com serviços?</h2>
+
+      <p>
+        Faça parte da nossa rede de profissionais.
+        Receba oportunidades de trabalho em Pirapora
+        e Buritizeiro.
+      </p>
+
+      <a href="#" class="btn btn-light" onclick="cadastrarProfissional(event)">
+        Quero ser profissional →
+      </a>
+    </div>
+
+    <div class="professional-icon">
+      👷
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOCALIZAÇÃO -->
+
+<section class="section locations-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">NOSSA REGIÃO</span>
+      <h2>Atendemos perto de você!</h2>
+      <p>Conectando clientes e profissionais da região.</p>
+    </div>
+
+    <div class="locations-grid">
+
+      <div class="location-card">
+        <span>📍</span>
+        <h3>Pirapora - MG</h3>
+        <p>Atendimento em toda a cidade.</p>
+      </div>
+
+      <div class="location-card">
+        <span>📍</span>
+        <h3>Buritizeiro - MG</h3>
+        <p>Atendimento em toda a cidade.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="container footer-content">
+
+    <a href="#" class="logo footer-logo">
+      <span class="logo-icon">✳</span>
+      <span>CHAMA<span class="logo-green">SERVIÇO</span></span>
+    </a>
+
+    <p>
+      Conectando pessoas e profissionais.
+    </p>
+
+    <p class="copyright">
+      ©️ <span id="year"></span> Chama Serviço. Todos os direitos reservados.
+    </p>
+
+    <small>Pirapora e Buritizeiro - Minas Gerais</small>
+
+  </div>
+
+</footer>
+
+
+<a href="#" class="whatsapp-float" id="whatsappFloat"
+   target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+  ☎
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
